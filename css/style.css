@@ -1,0 +1,46 @@
+/* RESETS */
+
+ body {
+     /* background: azure; */
+     margin: 0;
+     font-family: sans-serif;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    a {
+     text-decoration: none;
+    }
+
+/* CUSTOM STYLES */
+
+    header {
+     /* aligns the direct children on a row left to right */
+     display: flex;
+     align-items: center;
+     /* justify-content: space-between; */
+     background: #27224b;
+     padding: 25px 7% 20px;
+    }
+
+    header nav{
+        margin-left: 150px;
+    }
+
+    header a {
+        color: orange;
+    }
+
+    header a:hover, header a.active {
+        text-decoration: underline;
+    }
+
+    header nav a{
+        color: #fff;
+    }
+    
+    header nav a:not(:last-child){
+        margin-right: 10px;
+    }
