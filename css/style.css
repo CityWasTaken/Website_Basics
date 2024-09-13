@@ -1,9 +1,16 @@
+/* VARIABLES */
+
+:root {
+    --aq:  aquamarine;
+}
+
 /* RESETS */
 
  body {
-     /* background: azure; */
+     background: rgb(38, 56, 56);
      margin: 0;
      font-family: sans-serif;
+     overflow-x: hidden;
     }
 
     h3 {
@@ -14,6 +21,18 @@
      text-decoration: none;
     }
 
+/* ANIMATIONS */
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /* CUSTOM STYLES */
 
     header {
@@ -21,7 +40,7 @@
      display: flex;
      align-items: center;
      /* justify-content: space-between; */
-     background: #27224b;
+     background: #27224b5e;
      padding: 25px 7% 20px;
     }
 
@@ -44,3 +63,66 @@
     header nav a:not(:last-child){
         margin-right: 10px;
     }
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 3% 0 10%;
+    }
+
+    section p {
+        color: var(--aq);
+    }
+
+    section h1 {
+        color: white;
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin: 0 0 25px;
+        animation: slide-in 1s;
+    }
+
+    section button {
+        background: none;
+        border: 2px solid var(--aq);
+        /* padding: 10px 25px; */
+        padding: 0 0 0 10px;
+        display: flex;
+        align-items: center;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+    section button i {
+        color: #27224b;
+        font-size: 1.5rem;
+        background-color: var(--aq);
+        padding: 10px 15px;
+        margin-left: 15px;
+    }
+
+    section button:hover {
+        background: var(--aq);
+        color: #27224b;
+        transform: translateX(50px);
+    }
+
+    aside {
+        display: flex;
+        align-items: center;
+        transform: rotate(90deg);
+        position: relative;
+        left: 75px;
+    }
+
+aside p {
+    color: var(--aq);
+    margin-right: 15px;
+}
+
+aside i {
+    color: black;
+    margin-right: 8px;
+}
