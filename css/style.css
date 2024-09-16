@@ -1,25 +1,32 @@
 /* VARIABLES */
 
 :root {
-    --aq:  aquamarine;
+    --aq: aquamarine;
 }
 
 /* RESETS */
 
- body {
-     background: rgb(38, 56, 56);
-     margin: 0;
-     font-family: sans-serif;
-     overflow-x: hidden;
-    }
+html,
+body {
+    height: 100%;
+}
 
-    h3 {
-        margin: 0;
-    }
+body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(38, 56, 56);
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
 
-    a {
-     text-decoration: none;
-    }
+h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* ANIMATIONS */
 
@@ -35,101 +42,115 @@
 
 /* CUSTOM STYLES */
 
-    header {
-     /* aligns the direct children on a row left to right */
-     display: flex;
-     align-items: center;
-     /* justify-content: space-between; */
-     background: #27224b5e;
-     padding: 25px 7% 20px;
-    }
+header {
+    /* aligns the direct children on a row left to right */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: #27224b5e;
+    padding: 25px 7% 20px;
+}
 
-    header nav{
-        margin-left: 150px;
-    }
+header nav {
+    margin-left: 150px;
+}
 
-    header a {
-        color: orange;
-    }
+header a {
+    color: orange;
+}
 
-    header a:hover, header a.active {
-        text-decoration: underline;
-    }
+header a:hover,
+header a.active {
+    text-decoration: underline;
+}
 
-    header nav a{
-        color: #fff;
-    }
-    
-    header nav a:not(:last-child){
-        margin-right: 10px;
-    }
+header nav a {
+    color: #fff;
+}
 
-    main{
-        display: flex;
-        justify-content: space-between;
-        padding: 45px 3% 0 10%;
-    }
+header nav a:not(:last-child) {
+    margin-right: 10px;
+}
 
-    section p {
-        color: var(--aq);
-    }
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 3% 0 10%;
+    background-image: url(../images/Prod_Pic.png);
+    background-size: 32%;
+    background-repeat: no-repeat;
+    background-position: 80% 100%;
+    flex: 1;
+}
 
-    section h1 {
-        color: white;
-        font-size: 3rem;
-        text-transform: uppercase;
-        margin: 0 0 25px;
-        animation: slide-in 1s;
-    }
+section p {
+    color: var(--aq);
+}
 
-    section button {
-        background: none;
-        border: 2px solid var(--aq);
-        /* padding: 10px 25px; */
-        padding: 0 0 0 10px;
-        display: flex;
-        align-items: center;
-        color: white;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: all .5s;
-    }
+section h1 {
+    color: white;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+    animation: slide-in 1s;
+}
 
-    section button i {
-        color: #27224b;
-        font-size: 1.5rem;
-        background-color: var(--aq);
-        padding: 10px 15px;
-        margin-left: 15px;
-    }
+section button {
+    background: none;
+    border: 2px solid var(--aq);
+    /* padding: 10px 25px; */
+    padding: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s;
+}
 
-    section button:hover {
-        background: var(--aq);
-        color: #27224b;
-        transform: translateX(50px);
-    }
+section button i {
+    color: #27224b;
+    font-size: 1.5rem;
+    background-color: var(--aq);
+    padding: 10px 15px;
+    margin-left: 15px;
+}
 
-    aside {
-        display: flex;
-        align-items: center;
-        transform: rotate(90deg);
-        position: relative;
-        left: 75px;
-    }
+section button:hover {
+    background: var(--aq);
+    color: #27224b;
+    transform: translateX(50px);
+}
 
-    aside p {
-        color: var(--aq);
-        margin-right: 15px;
-    }
+aside {
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    position: relative;
+    left: 75px;
+}
 
-    aside i {
-        color: black;
-        margin-right: 8px;
-    }
+aside p {
+    color: var(--aq);
+    margin-right: 15px;
+}
 
-    .footer {
-        margin: 600px 0 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-  }
+aside i {
+    color: #fff;
+    margin-right: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px 7%;
+    color: #526869;
+    background: #27224b5e;
+}
+
+/* MEDIA QUERIES */
+/* @media (max-width: 700px) {
+    main {
+        background-position: right; */
+    /* }
+} */
